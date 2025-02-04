@@ -1,0 +1,40 @@
+@import url('https://fonts.cdnfonts.com/css/uber-move-text');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: 'Uber Move Text', system-ui, sans-serif;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+.prose pre {
+  @apply bg-gray-100 dark:bg-gray-800;
+  @apply rounded-lg;
+  @apply p-4;
+  @apply overflow-x-auto;
+}
+
+.prose code {
+  @apply text-sm;
+  @apply bg-gray-100 dark:bg-gray-800;
+  @apply px-1;
+  @apply rounded;
+}
+
+.prose h3 {
+  @apply text-lg font-semibold mt-6 mb-4;
+}
+
+.prose ul {
+  @apply list-disc list-inside;
+}
+
+.prose p {
+  @apply my-4;
+}
